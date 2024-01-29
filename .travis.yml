@@ -1,0 +1,20 @@
+language: node_js
+node_js:
+  - '12'
+services:
+  - mongodb
+cache: yarn
+branches:
+  only:
+    - master
+env:
+  global:
+    - PORT=3000
+    - MONGODB_URL=mongodb+srv://restoap-dev:restoap-dev-2023@dev.ix55o6n.mongodb.net/dev
+    - JWT_SECRET=81c654572bcbbbdcfc958d4b194b7f8b4817d9d3209be31909c58aea677a520a42d737687ed62dc20dab6da50a7fa707fced0618c7e3ca4e35d1300677d0213b
+    - JWT_ACCESS_EXPIRATION_MINUTES=30
+    - JWT_REFRESH_EXPIRATION_DAYS=30
+script:
+  - yarn lint
+  - yarn test
+after_success: yarn coverage:coveralls

@@ -1,0 +1,17 @@
+module.exports.authValidation = require('./auth.validation');
+module.exports.userValidation = require('./user.validation');
+module.exports.diningCategoryValidation = require('./diningCategory.validation');
+module.exports.requestValidation = require('./request.validation');
+module.exports.permissionValidation = require('./permission.validation');
+module.exports.tableValidation = require('./table.validation');
+module.exports.restaurantValidation = require('./restaurant.validation');
+module.exports.storeValidation = require('./store.validation');
+module.exports.roleValidation = require('./role.validation');
+module.exports.categoryValidation = require('./category.validation');
+module.exports.subscriptionValidation = require('./subscription.validation');
+module.exports.menuItemValidation = require('./menuItem.validation');
+module.exports.addOnValidation = require('./addOns.validations');
+module.exports.orderValidation = require('./order.validation');
+module.exports.integrationValidation = require('./integration.validation');
+module.exports.subsInvoiceValidtion = require('./subsInvoice.validation');
+module.exports.kitchenValidation = require('./integration.validation');

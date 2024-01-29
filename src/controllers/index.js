@@ -1,0 +1,16 @@
+module.exports.authController = require('./auth.controller');
+module.exports.userController = require('./user.controller');
+module.exports.diningCategoryController = require('./diningCategory.controller');
+module.exports.requestController = require('./request.controller');
+module.exports.tableController = require('./table.controller');
+module.exports.roleController = require('./role.controller');
+module.exports.storeController = require('./store.controller');
+module.exports.stripeController = require('./stripe.controller');
+module.exports.menuItemController = require('./menuItem.controller');
+module.exports.orderController = require('./order.controller');
+module.exports.addOnController = require('./addOn.controller');
+module.exports.razorpayController = require('./razorpay.controller');
+module.exports.systmAdmin = require('./systemAdmin/index');
+module.exports.subsInvoiceController = require('./subsInvoice.controler');
+module.exports.kitchenController = require('./kitchen.controller');
+module.exports.reportController = require('./report.controller')
